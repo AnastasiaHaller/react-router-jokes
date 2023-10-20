@@ -20,7 +20,7 @@ const JokeDetails = () => {
     const joke = DUMMY_JOKES.find((joke) => joke.id === params.jokeId);
 
     if (!joke) {
-        return <h1>No Jokes</h1>
+        return <h1 className='centered'>No Jokes</h1>
     }
 
     return(
