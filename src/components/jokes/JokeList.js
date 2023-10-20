@@ -1,11 +1,9 @@
-import { Fragment } from 'react';
-
 import JokeItem from './JokeItem';
 import styles from './JokeList.module.css';
 
 const JokeList = (props) => {
   return (
-    <Fragment>
+    <>
       <ul className={styles.list}>
         {props.jokes.map((joke) => (
           <JokeItem
@@ -16,7 +14,7 @@ const JokeList = (props) => {
           />
         ))}
       </ul>
-    </Fragment>
+    </>
   );
 };
 
